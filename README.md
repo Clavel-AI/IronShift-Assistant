@@ -1,8 +1,4 @@
-<p align="center">
-  <img src="assets/logo.png" alt="IronShift Logo" width="150" height="150">
-</p>
-
-<h1 align="center">☁️ IronShift - AI-Powered Cloud Infrastructure Copilot</h1>
+<h1 align="center">IronShift - AI-Powered Cloud Infrastructure Copilot</h1>
 
 <p align="center">
   <strong>Manage Azure & AWS through natural conversation—right inside VS Code</strong>
@@ -10,10 +6,10 @@
 
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=IronShift.ironshift">
-    <img src="https://img.shields.io/visual-studio-marketplace/v/IronShift.ironshift?style=for-the-badge&logo=visual-studio-code&logoColor=white&label=VS%20Code&color=007ACC" alt="VS Code Marketplace">
+    <img src="https://img.shields.io/visual-studio-marketplace/v/IronShift.ironshift?style=for-the-badge&logo=visual-studio-code&logoColor=white&label=Version&color=007ACC" alt="Version">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=IronShift.ironshift">
-    <img src="https://img.shields.io/visual-studio-marketplace/d/IronShift.ironshift?style=for-the-badge&logo=visual-studio-code&logoColor=white&label=Downloads&color=4CAF50" alt="Downloads">
+    <img src="https://img.shields.io/visual-studio-marketplace/i/IronShift.ironshift?style=for-the-badge&logo=visual-studio-code&logoColor=white&label=Installs&color=4CAF50" alt="Installs">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=IronShift.ironshift">
     <img src="https://img.shields.io/visual-studio-marketplace/r/IronShift.ironshift?style=for-the-badge&logo=visual-studio-code&logoColor=white&label=Rating&color=FFC107" alt="Rating">
@@ -21,16 +17,16 @@
 </p>
 
 <p align="center">
-  <a href="#-what-is-ironshift">What is IronShift</a> •
-  <a href="#-key-features">Features</a> •
-  <a href="#-quick-start">Quick Start</a> •
-  <a href="#-supported-clouds">Clouds</a> •
-  <a href="#-support">Support</a>
+  <a href="#what-is-ironshift">What is IronShift</a> •
+  <a href="#key-features">Features</a> •
+  <a href="#quick-start">Quick Start</a> •
+  <a href="#supported-clouds">Clouds</a> •
+  <a href="#support">Support</a>
 </p>
 
 ---
 
-## 🚀 What is IronShift?
+## What is IronShift?
 
 **IronShift** is your AI-powered cloud infrastructure copilot that lives right inside VS Code. Stop context-switching between your IDE, cloud consoles, and documentation.
 
@@ -42,9 +38,9 @@
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-### 🗣️ Natural Language Interface
+### Natural Language Interface
 Ask questions in plain English. No need to memorize CLI commands or navigate complex cloud consoles.
 
 ```
@@ -54,40 +50,35 @@ Ask questions in plain English. No need to memorize CLI commands or navigate com
 "Start the VM named web-server-01"
 ```
 
-<p align="center">
-  <img src="assets/feature-chat.png" alt="Natural Language Chat" width="700">
-</p>
-
 ---
 
-### ☁️ Multi-Cloud Support
+### Multi-Cloud Support
 Seamlessly manage resources across multiple cloud providers from a single interface.
 
 <p align="center">
   <img src="https://img.shields.io/badge/Microsoft%20Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Azure">
   <img src="https://img.shields.io/badge/Amazon%20AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS">
-  <img src="https://img.shields.io/badge/Google%20Cloud-Coming%20Soon-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" alt="GCP">
 </p>
 
 ---
 
-### �️ Human-in-the-Loop Safety
+### Human-in-the-Loop Safety
 Every action is reviewed before execution. **You stay in control.**
 
 <p align="center">
-  <img src="assets/feature-approval.png" alt="Action Approval" width="700">
+  <img src="assets/feature-approval.png" alt="Action Approval" width="800">
 </p>
 
 IronShift shows you:
-- ✅ The exact tool/command to be executed
-- ✅ All parameters and arguments
-- ✅ Risk assessment for each operation
+- The exact tool/command to be executed
+- All parameters and arguments
+- Risk assessment for each operation
 
 **Approve, modify, or reject any action before it runs.**
 
 ---
 
-### 🤖 Multiple AI Models
+### Multiple AI Models
 Choose from the best AI models for your needs:
 
 | Model | Provider | Best For |
@@ -99,22 +90,22 @@ Choose from the best AI models for your needs:
 
 ---
 
-### ⚡ Real-Time Streaming
+### Real-Time Streaming
 Get instant feedback with real-time streaming responses. Watch as IronShift analyzes your request and provides step-by-step results.
 
 ---
 
-### 🖥️ Integrated Terminal Execution
+### Integrated Terminal Execution
 Execute cloud commands directly in VS Code's integrated terminal. See command outputs in real-time without leaving your editor.
 
 ---
 
-### � Conversation History
+### Conversation History
 Your chat sessions are preserved. Continue where you left off, or review past troubleshooting sessions for reference.
 
 ---
 
-## 📦 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -142,7 +133,7 @@ ext install IronShift.ironshift
 
 ---
 
-## ☁️ Supported Clouds & Operations
+## Supported Clouds & Operations
 
 ### Microsoft Azure
 | Category | Operations |
@@ -165,7 +156,7 @@ ext install IronShift.ironshift
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 | Setting | Default | Description |
 |---------|---------|-------------|
@@ -175,36 +166,36 @@ ext install IronShift.ironshift
 
 ---
 
-## 🔒 Security & Privacy
+## Security & Privacy
 
-- 🔐 **Credentials stay local** — Uses your existing CLI authentication
-- 👁️ **Human-in-the-loop** — All write operations require explicit approval
-- 📋 **Audit trail** — Every action logged in conversation history
-- 🏢 **Enterprise ready** — Self-host your own backend for complete control
-
----
-
-## 🛣️ Roadmap
-
-- [ ] **Google Cloud Platform (GCP)** support
-- [ ] **Terraform** integration for IaC management
-- [ ] **Cost analysis** and optimization suggestions
-- [ ] **Scheduled operations** and automation workflows
-- [ ] **Team collaboration** features
-- [ ] **Custom tool definitions** for enterprise needs
+- **Credentials stay local** — Uses your existing CLI authentication
+- **Human-in-the-loop** — All write operations require explicit approval
+- **Audit trail** — Every action logged in conversation history
+- **Enterprise ready** — Self-host your own backend for complete control
 
 ---
 
-## 💬 Support, Feedback & Community
+## Roadmap
 
-- 🐛 **Bug Reports:** [GitHub Issues](https://github.com/ironshift/ironshift-vscode/issues)
-- 💡 **Feature Requests:** [GitHub Discussions](https://github.com/ironshift/ironshift-vscode/discussions)
-- 📧 **Email:** support@ironshift.dev
-- 🌐 **Website:** [https://ironshift.dev](https://ironshift.dev)
+- [ ] Google Cloud Platform (GCP) support
+- [ ] Terraform integration for IaC management
+- [ ] Cost analysis and optimization suggestions
+- [ ] Scheduled operations and automation workflows
+- [ ] Team collaboration features
+- [ ] Custom tool definitions for enterprise needs
 
 ---
 
-## 📄 License
+## Support, Feedback & Community
+
+- **Bug Reports:** [GitHub Issues](https://github.com/Clavel-AI/IronShift-Assistant/issues)
+- **Feature Requests:** [GitHub Discussions](https://github.com/Clavel-AI/IronShift-Assistant/discussions)
+- **Email:** support@ironshift.dev
+- **Website:** [https://ironshift.dev](https://ironshift.dev)
+
+---
+
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -216,10 +207,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=IronShift.ironshift">
-    <img src="https://img.shields.io/badge/🚀%20Install%20Now-VS%20Code%20Marketplace-007ACC?style=for-the-badge" alt="Install Now">
+    <img src="https://img.shields.io/badge/Install%20Now-VS%20Code%20Marketplace-007ACC?style=for-the-badge" alt="Install Now">
   </a>
-</p>
-
-<p align="center">
-  <strong>Happy Cloud Managing! ☁️</strong>
 </p>
