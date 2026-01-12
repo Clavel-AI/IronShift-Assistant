@@ -48,6 +48,7 @@ Ask questions in plain English. No need to memorize CLI commands or navigate com
 "What's the status of my Kubernetes pods?"
 "Show me the logs for my container app"
 "Start the VM named web-server-01"
+"Create a storage account in West US region"
 ```
 
 ---
@@ -59,6 +60,17 @@ Seamlessly manage resources across multiple cloud providers from a single interf
   <img src="https://img.shields.io/badge/Microsoft%20Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Azure">
   <img src="https://img.shields.io/badge/Amazon%20AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS">
 </p>
+
+---
+
+### Three Operation Modes
+Choose the right mode for your task:
+
+| Mode | Description |
+|------|-------------|
+| **Chat** | Quick Q&A and information retrieval |
+| **Plan** | Generate step-by-step plans before execution |
+| **Agent** | Autonomous execution with approval checkpoints |
 
 ---
 
@@ -90,18 +102,37 @@ Choose from the best AI models for your needs:
 
 ---
 
+### Image Attachments & Vision
+Attach screenshots or diagrams for context-aware assistance:
+- **Paste** images directly from clipboard
+- **Drag & drop** files into the chat
+- **Browse** to select multiple images
+- Supports PNG, JPG, GIF, WebP (up to 10MB)
+
+*Great for sharing error screenshots, architecture diagrams, or console outputs.*
+
+---
+
+### Smart Chat Management
+- **Persistent History** — All chats saved locally (privacy-first)
+- **Multiple Sessions** — Switch between different conversations
+- **Edit & Retry** — Modify previous messages and regenerate responses
+- **Auto-cleanup** — Empty chats are automatically removed
+
+---
+
 ### Real-Time Streaming
 Get instant feedback with real-time streaming responses. Watch as IronShift analyzes your request and provides step-by-step results.
 
 ---
 
-### Integrated Terminal Execution
-Execute cloud commands directly in VS Code's integrated terminal. See command outputs in real-time without leaving your editor.
+### Batch Command Execution
+Execute multiple commands in sequence with real-time progress tracking. IronShift queues operations and shows live output for each command.
 
 ---
 
-### Conversation History
-Your chat sessions are preserved. Continue where you left off, or review past troubleshooting sessions for reference.
+### Integrated Terminal Execution
+Execute cloud commands directly in VS Code's integrated terminal. See command outputs in real-time without leaving your editor.
 
 ---
 
@@ -133,6 +164,17 @@ ext install IronShift.ironshift
 
 ---
 
+## Keyboard Shortcuts
+
+| Action | Windows/Linux | Mac |
+|--------|---------------|-----|
+| Open IronShift | `Ctrl+Shift+P` → "Open IronShift" | `Cmd+Shift+P` → "Open IronShift" |
+| Send Message | `Enter` | `Enter` |
+| New Line | `Shift+Enter` | `Shift+Enter` |
+| Paste Image | `Ctrl+V` | `Cmd+V` |
+
+---
+
 ## Supported Clouds & Operations
 
 ### Microsoft Azure
@@ -141,18 +183,21 @@ ext install IronShift.ironshift
 | **Resource Groups** | List, Create, Delete |
 | **Virtual Machines** | List, Start, Stop, Restart, Get Status |
 | **Container Apps** | List, Manage, View Logs |
-| **Kubernetes (AKS)** | Cluster Management, Pod Status |
-| **Storage Accounts** | List, Manage |
+| **Kubernetes (AKS)** | Cluster Management, Pod Status, Deployments |
+| **Storage Accounts** | List, Create, Manage Blobs |
 | **App Services** | Deploy, Configure, Monitor |
+| **Azure Advisor** | Get Recommendations, Cost Optimization |
+| **Monitor & Logs** | Query Metrics, Application Insights |
 
 ### Amazon AWS
 | Category | Operations |
 |----------|------------|
-| **EC2 Instances** | List, Start, Stop, Terminate |
-| **S3 Buckets** | List, Create, Manage Objects |
-| **Lambda Functions** | List, Invoke, View Logs |
-| **ECS/EKS Clusters** | Cluster & Service Management |
-| **IAM Resources** | Users, Roles, Policies |
+| **EC2 Instances** | List, Start, Stop, Terminate, Describe |
+| **S3 Buckets** | List, Create, Manage Objects, Permissions |
+| **Lambda Functions** | List, Invoke, View Logs, Update Config |
+| **ECS/EKS Clusters** | Cluster & Service Management, Task Definitions |
+| **IAM Resources** | Users, Roles, Policies, Access Keys |
+| **CloudWatch** | Logs, Metrics, Alarms |
 
 ---
 
@@ -168,10 +213,12 @@ ext install IronShift.ironshift
 
 ## Security & Privacy
 
+- **Privacy-First** — Chat history stored locally, never sent to cloud
 - **Credentials stay local** — Uses your existing CLI authentication
 - **Human-in-the-loop** — All write operations require explicit approval
 - **Audit trail** — Every action logged in conversation history
 - **Enterprise ready** — Self-host your own backend for complete control
+- **No data collection** — Your queries and results stay on your machine
 
 ---
 
