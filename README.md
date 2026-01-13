@@ -14,6 +14,15 @@
   <a href="https://marketplace.visualstudio.com/items?itemName=IronShift.ironshift">
     <img src="https://img.shields.io/visual-studio-marketplace/r/IronShift.ironshift?style=for-the-badge&logo=visual-studio-code&logoColor=white&label=Rating&color=FFC107&cacheSeconds=21600" alt="Rating">
   </a>
+  <a href="https://twitter.com/IronShiftDev">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
+  </a>
+  <a href="https://discord.gg/ironshift">
+    <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
+  </a>
+  <a href="https://linkedin.com/company/ironshift">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
 </p>
 
 <p align="center">
@@ -91,14 +100,29 @@ IronShift shows you:
 ---
 
 ### Multiple AI Models
-Choose from the best AI models for your needs:
+Choose from industry-leading AI models across multiple providers:
 
 | Model | Provider | Best For |
 |-------|----------|----------|
-| **GPT-4.1** | Azure OpenAI | Complex reasoning & troubleshooting |
-| **GPT-4o** | Azure OpenAI | Fast, high-performance responses |
+| **GPT-4.1** | OpenAI | Complex reasoning & troubleshooting |
+| **GPT-4o** | OpenAI | Fast, high-performance responses |
 | **Claude Sonnet 4.5** | Anthropic | Detailed analysis & explanations |
 | **Claude Sonnet 4** | Anthropic | Balanced performance |
+| **Gemini 2.5 Pro** | Google | Advanced reasoning & multimodal tasks |
+| **Gemini 2.5 Flash** | Google | Speed-optimized responses |
+| **Grok 4** | xAI | Real-time knowledge & creative solutions |
+
+---
+
+### Auto Mode — Intelligent Model Selection
+Let IronShift choose the optimal model for each task automatically:
+
+- **Command Generation** — Uses best-in-class models for accurate CLI commands
+- **Analysis & Reasoning** — Leverages advanced models for complex troubleshooting
+- **Fast Responses** — Switches to speed-optimized models for quick queries
+- **Toggle anytime** — Switch between Auto and manual model selection
+
+*No API key management needed—just enable Auto mode and let IronShift handle the rest.*
 
 ---
 
@@ -207,7 +231,7 @@ ext install IronShift.ironshift
 |---------|---------|-------------|
 | `ironshift.backendUrl` | IronShift Cloud | Backend service URL (enterprise deployments) |
 | `ironshift.autoApprove` | `false` | Auto-approve low-risk read operations |
-| `ironshift.defaultModel` | `gpt-4.1` | Default AI model for responses |
+| `ironshift.defaultModel` | `Auto` | Default AI model for responses (supports Auto mode) |
 
 ---
 
