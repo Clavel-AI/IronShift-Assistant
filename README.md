@@ -33,13 +33,7 @@
 > Just ask IronShift what you need, and it will manage, troubleshoot, and automate your cloud infrastructure—with your approval.
 
 <p align="center">
-  <img src="assets/demo.png" alt="IronShift Demo" width="800">
-</p>
-
-<p align="center">
-  <video src="assets/Demo.mp4" controls width="800">
-    Your browser does not support the video tag.
-  </video>
+  <img src="assets/Video%20Project%20(1).gif" alt="IronShift Demo" width="800">
 </p>
 
 ---
