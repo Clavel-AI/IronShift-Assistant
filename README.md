@@ -6,13 +6,13 @@
 
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=IronShift.ironshift">
-    <img src="https://img.shields.io/visual-studio-marketplace/v/IronShift.ironshift?style=for-the-badge&logo=visual-studio-code&logoColor=white&label=Version&color=007ACC&cacheSeconds=3600" alt="Version">
+    <img src="https://img.shields.io/visual-studio-marketplace/v/IronShift.ironshift?style=for-the-badge&logo=visual-studio-code&logoColor=white&label=Version&color=007ACC&cacheSeconds=21600" alt="Version">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=IronShift.ironshift">
-    <img src="https://img.shields.io/visual-studio-marketplace/i/IronShift.ironshift?style=for-the-badge&logo=visual-studio-code&logoColor=white&label=Installs&color=4CAF50&cacheSeconds=3600" alt="Installs">
+    <img src="https://img.shields.io/visual-studio-marketplace/i/IronShift.ironshift?style=for-the-badge&logo=visual-studio-code&logoColor=white&label=Installs&color=4CAF50&cacheSeconds=21600" alt="Installs">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=IronShift.ironshift">
-    <img src="https://img.shields.io/visual-studio-marketplace/r/IronShift.ironshift?style=for-the-badge&logo=visual-studio-code&logoColor=white&label=Rating&color=FFC107&cacheSeconds=3600" alt="Rating">
+    <img src="https://img.shields.io/visual-studio-marketplace/r/IronShift.ironshift?style=for-the-badge&logo=visual-studio-code&logoColor=white&label=Rating&color=FFC107&cacheSeconds=21600" alt="Rating">
   </a>
 </p>
 
@@ -34,6 +34,12 @@
 
 <p align="center">
   <img src="assets/demo.png" alt="IronShift Demo" width="800">
+</p>
+
+<p align="center">
+  <video src="assets/Demo.mp4" controls width="800">
+    Your browser does not support the video tag.
+  </video>
 </p>
 
 ---
