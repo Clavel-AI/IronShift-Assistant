@@ -1,4 +1,4 @@
-<h1 align="center">IronShift - AI-Powered Cloud Infrastructure Copilot</h1>
+<h1 align="center">IronShift — AI-Powered Cloud Infrastructure Copilot</h1>
 
 <p align="center">
   <strong>Manage Azure & AWS through natural conversation—right inside VS Code</strong>
@@ -29,17 +29,28 @@
   <a href="#what-is-ironshift">What is IronShift</a> •
   <a href="#key-features">Features</a> •
   <a href="#quick-start">Quick Start</a> •
-  <a href="#supported-clouds">Clouds</a> •
-  <a href="#support">Support</a>
+  <a href="#supported-clouds--operations">Clouds</a> •
+  <a href="#support-feedback--community">Support</a>
 </p>
 
 ---
 
-## What is IronShift?
+## **What is IronShift?**
 
-**IronShift** is your AI-powered cloud infrastructure copilot that lives right inside VS Code. Stop context-switching between your IDE, cloud consoles, and documentation.
+**IronShift** is the AI-powered cloud infrastructure copilot that helps SREs and cloud developers manage, troubleshoot, and automate cloud resources—all within **Visual Studio Code**. Stop context-switching between your IDE, cloud consoles, and documentation.
 
-> Just ask IronShift what you need, and it will manage, troubleshoot, and automate your cloud infrastructure—with your approval.
+> Just ask IronShift what you need, and it will execute cloud operations, analyze infrastructure, and provide intelligent recommendations—with your approval.
+
+### **With IronShift, you get:**
+
+✅ **Natural Language Interface** — Ask questions in plain English, no CLI memorization needed  
+✅ **Multi-Cloud Support** — Seamlessly manage Azure and AWS from a single interface  
+✅ **Human-in-the-Loop Safety** — Every action reviewed before execution, you stay in control  
+✅ **Multiple AI Models** — Choose from GPT-4.1, Claude, Gemini, Grok, or let Auto mode decide  
+✅ **Real-Time Streaming** — Watch as IronShift analyzes and executes step-by-step  
+✅ **Vision Support** — Attach screenshots for context-aware troubleshooting  
+
+Designed for **SREs, DevOps engineers, and cloud developers**, IronShift helps you operate cloud infrastructure smarter, faster, and more securely. 🚀
 
 <p align="center">
   <img src="assets/Video%20Project%20(1).gif" alt="IronShift Demo" width="800">
@@ -47,10 +58,15 @@
 
 ---
 
-## Key Features
+## **Key Features**
 
-### Natural Language Interface
-Ask questions in plain English. No need to memorize CLI commands or navigate complex cloud consoles.
+### **Manage Cloud Resources with Natural Language**
+
+Ask questions in plain English and let IronShift handle the complex CLI commands and API calls.
+
+✅ **No CLI memorization** — Just describe what you want  
+✅ **Context-aware responses** — IronShift understands your infrastructure  
+✅ **Instant results** — Get answers in seconds, not minutes  
 
 ```
 "List all my Azure VMs in the production resource group"
@@ -62,45 +78,51 @@ Ask questions in plain English. No need to memorize CLI commands or navigate com
 
 ---
 
-### Multi-Cloud Support
-Seamlessly manage resources across multiple cloud providers from a single interface.
+### **Multi-Cloud Support — Azure & AWS**
+
+Seamlessly manage resources across multiple cloud providers from a single, unified interface.
 
 <p align="center">
   <img src="https://img.shields.io/badge/Microsoft%20Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Azure">
   <img src="https://img.shields.io/badge/Amazon%20AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS">
 </p>
 
+✅ **Azure** — Resource Groups, VMs, AKS, Container Apps, Storage, App Services, Advisor, Monitor  
+✅ **AWS** — EC2, S3, Lambda, ECS/EKS, IAM, CloudWatch  
+✅ **Unified Experience** — Same interface for both clouds  
+
 ---
 
-### Three Operation Modes
+### **Three Powerful Operation Modes**
+
 Choose the right mode for your task:
 
-| Mode | Description |
-|------|-------------|
-| **Chat** | Quick Q&A and information retrieval |
-| **Plan** | Generate step-by-step plans before execution |
-| **Agent** | Autonomous execution with approval checkpoints |
+| Mode | Description | Best For |
+|------|-------------|----------|
+| **💬 Chat** | Quick Q&A and information retrieval | Getting quick answers about your infrastructure |
+| **📋 Plan** | Generate step-by-step plans before execution | Complex operations requiring review |
+| **🤖 Agent** | Autonomous execution with approval checkpoints | Hands-free automation with safety controls |
 
 ---
 
-### Human-in-the-Loop Safety
-Every action is reviewed before execution. **You stay in control.**
+### **Human-in-the-Loop Safety — You Stay in Control**
+
+Every action is reviewed before execution. IronShift never runs a command without your explicit approval.
 
 <p align="center">
   <img src="assets/feature-approval.png" alt="Action Approval" width="800">
 </p>
 
-IronShift shows you:
-- The exact tool/command to be executed
-- All parameters and arguments
-- Risk assessment for each operation
-
-**Approve, modify, or reject any action before it runs.**
+✅ **See the exact command** — Full transparency on what will run  
+✅ **Review all parameters** — Understand every argument before execution  
+✅ **Risk assessment** — Know the impact of each operation  
+✅ **Approve, modify, or reject** — Complete control at every step  
 
 ---
 
-### Multiple AI Models
-Choose from industry-leading AI models across multiple providers:
+### **7 Industry-Leading AI Models**
+
+Choose from the best AI models across multiple providers, or let Auto mode select the optimal model for each task.
 
 | Model | Provider | Best For |
 |-------|----------|----------|
@@ -114,55 +136,57 @@ Choose from industry-leading AI models across multiple providers:
 
 ---
 
-### Auto Mode — Intelligent Model Selection
-Let IronShift choose the optimal model for each task automatically:
+### **Auto Mode — Intelligent Model Selection**
 
-- **Command Generation** — Uses best-in-class models for accurate CLI commands
-- **Analysis & Reasoning** — Leverages advanced models for complex troubleshooting
-- **Fast Responses** — Switches to speed-optimized models for quick queries
-- **Toggle anytime** — Switch between Auto and manual model selection
+Let IronShift choose the optimal model for each task automatically.
+
+✅ **Command Generation** — Uses best-in-class models for accurate CLI commands  
+✅ **Analysis & Reasoning** — Leverages advanced models for complex troubleshooting  
+✅ **Fast Responses** — Switches to speed-optimized models for quick queries  
+✅ **Toggle anytime** — Switch between Auto and manual model selection  
 
 *No API key management needed—just enable Auto mode and let IronShift handle the rest.*
 
 ---
 
-### Image Attachments & Vision
-Attach screenshots or diagrams for context-aware assistance:
-- **Paste** images directly from clipboard
-- **Drag & drop** files into the chat
-- **Browse** to select multiple images
-- Supports PNG, JPG, GIF, WebP (up to 10MB)
+### **Image Attachments & Vision**
+
+Attach screenshots or diagrams for context-aware assistance. Perfect for troubleshooting errors or sharing architecture diagrams.
+
+✅ **Paste** images directly from clipboard (`Ctrl+V` / `Cmd+V`)  
+✅ **Drag & drop** files into the chat  
+✅ **Browse** to select multiple images  
+✅ **Supports** PNG, JPG, GIF, WebP (up to 10MB)  
 
 *Great for sharing error screenshots, architecture diagrams, or console outputs.*
 
 ---
 
-### Smart Chat Management
-- **Persistent History** — All chats saved locally (privacy-first)
-- **Multiple Sessions** — Switch between different conversations
-- **Edit & Retry** — Modify previous messages and regenerate responses
-- **Auto-cleanup** — Empty chats are automatically removed
+### **Smart Chat Management**
+
+Keep your conversations organized and pick up right where you left off.
+
+✅ **Persistent History** — All chats saved locally (privacy-first)  
+✅ **Multiple Sessions** — Switch between different conversations  
+✅ **Edit & Retry** — Modify previous messages and regenerate responses  
+✅ **Auto-cleanup** — Empty chats are automatically removed  
 
 ---
 
-### Real-Time Streaming
-Get instant feedback with real-time streaming responses. Watch as IronShift analyzes your request and provides step-by-step results.
+### **Real-Time Streaming & Batch Execution**
+
+Get instant feedback with real-time streaming responses. Execute multiple commands in sequence with live progress tracking.
+
+✅ **Watch AI think** — See step-by-step analysis in real-time  
+✅ **Batch operations** — Queue multiple commands with progress tracking  
+✅ **Live output** — See command results as they execute  
+✅ **Integrated terminal** — Execute directly in VS Code's terminal  
 
 ---
 
-### Batch Command Execution
-Execute multiple commands in sequence with real-time progress tracking. IronShift queues operations and shows live output for each command.
+## **Quick Start**
 
----
-
-### Integrated Terminal Execution
-Execute cloud commands directly in VS Code's integrated terminal. See command outputs in real-time without leaving your editor.
-
----
-
-## Quick Start
-
-### Installation
+### **Installation**
 
 1. Open **Visual Studio Code**
 2. Go to **Extensions** (`Ctrl+Shift+X` / `Cmd+Shift+X`)
@@ -174,13 +198,17 @@ Or install directly:
 ext install IronShift.ironshift
 ```
 
-### Prerequisites
+### **Prerequisites**
 
-- **VS Code** v1.85.0 or later
-- **Azure CLI** (for Azure operations) - [Install Guide](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
-- **AWS CLI** (for AWS operations) - [Install Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+| Requirement | Version | Purpose |
+|-------------|---------|---------|
+| **VS Code** | v1.85.0+ | IDE |
+| **Azure CLI** | Latest | Azure operations |
+| **AWS CLI** | Latest | AWS operations |
 
-### Getting Started
+📖 **[Azure CLI Install Guide](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)** | **[AWS CLI Install Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)**
+
+### **Getting Started**
 
 1. Click the **IronShift** icon in the Activity Bar
 2. Authenticate with your cloud provider when prompted
@@ -188,7 +216,7 @@ ext install IronShift.ironshift
 
 ---
 
-## Keyboard Shortcuts
+## **Keyboard Shortcuts**
 
 | Action | Windows/Linux | Mac |
 |--------|---------------|-----|
@@ -199,9 +227,10 @@ ext install IronShift.ironshift
 
 ---
 
-## Supported Clouds & Operations
+## **Supported Clouds & Operations**
 
-### Microsoft Azure
+### **Microsoft Azure**
+
 | Category | Operations |
 |----------|------------|
 | **Resource Groups** | List, Create, Delete |
@@ -213,7 +242,8 @@ ext install IronShift.ironshift
 | **Azure Advisor** | Get Recommendations, Cost Optimization |
 | **Monitor & Logs** | Query Metrics, Application Insights |
 
-### Amazon AWS
+### **Amazon AWS**
+
 | Category | Operations |
 |----------|------------|
 | **EC2 Instances** | List, Start, Stop, Terminate, Describe |
@@ -225,48 +255,57 @@ ext install IronShift.ironshift
 
 ---
 
-## Configuration
+## **Configuration**
 
 | Setting | Default | Description |
 |---------|---------|-------------|
 | `ironshift.backendUrl` | IronShift Cloud | Backend service URL (enterprise deployments) |
 | `ironshift.autoApprove` | `false` | Auto-approve low-risk read operations |
-| `ironshift.defaultModel` | `Auto` | Default AI model for responses (supports Auto mode) |
+| `ironshift.defaultModel` | `Auto` | Default AI model for responses |
 
 ---
 
-## Security & Privacy
+## **Security & Privacy**
 
-- **Privacy-First** — Chat history stored locally, never sent to cloud
-- **Credentials stay local** — Uses your existing CLI authentication
-- **Human-in-the-loop** — All write operations require explicit approval
-- **Audit trail** — Every action logged in conversation history
-- **Enterprise ready** — Self-host your own backend for complete control
-- **No data collection** — Your queries and results stay on your machine
+IronShift is built with security and privacy as top priorities.
 
----
-
-## Roadmap
-
-- [ ] Google Cloud Platform (GCP) support
-- [ ] Terraform integration for IaC management
-- [ ] Cost analysis and optimization suggestions
-- [ ] Scheduled operations and automation workflows
-- [ ] Team collaboration features
-- [ ] Custom tool definitions for enterprise needs
+✅ **Privacy-First** — Chat history stored locally, never sent to cloud  
+✅ **Credentials Stay Local** — Uses your existing CLI authentication  
+✅ **Human-in-the-Loop** — All write operations require explicit approval  
+✅ **Audit Trail** — Every action logged in conversation history  
+✅ **Enterprise Ready** — Self-host your own backend for complete control  
+✅ **No Data Collection** — Your queries and results stay on your machine  
 
 ---
 
-## Support, Feedback & Community
+## **Roadmap**
 
-- **Bug Reports:** [GitHub Issues](https://github.com/Clavel-AI/IronShift-Assistant/issues)
-- **Feature Requests:** [GitHub Discussions](https://github.com/Clavel-AI/IronShift-Assistant/discussions)
-- **Email:** support@ironshift.dev
-- **Website:** [https://ironshift.dev](https://ironshift.dev)
+We're constantly improving IronShift. Here's what's coming:
+
+- [ ] 🌐 **Google Cloud Platform (GCP)** support
+- [ ] 🏗️ **Terraform** integration for IaC management
+- [ ] 💰 **Cost analysis** and optimization suggestions
+- [ ] ⏰ **Scheduled operations** and automation workflows
+- [ ] 👥 **Team collaboration** features
+- [ ] 🔧 **Custom tool definitions** for enterprise needs
 
 ---
 
-## License
+## **Support, Feedback & Community**
+
+We're constantly improving **IronShift** to make your cloud operations even better. Your feedback helps shape the future of the extension!
+
+💬 **[Join the Conversation](https://discord.gg/ironshift)** — Connect with fellow developers, share feedback, and get real-time support in our active **Discord Community**.  
+🐞 **[Report Issues & Suggestions](https://github.com/Clavel-AI/IronShift-Assistant/issues)** — Found a bug or have a feature request? Let us know—we're always listening.  
+💡 **[Feature Requests](https://github.com/Clavel-AI/IronShift-Assistant/discussions)** — Share your ideas and vote on upcoming features.  
+📧 **Email:** support@ironshift.dev  
+🌐 **Website:** [https://ironshift.dev](https://ironshift.dev)
+
+We're excited to have you on board—let **IronShift** supercharge your cloud workflow! 🚀
+
+---
+
+## **License**
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
