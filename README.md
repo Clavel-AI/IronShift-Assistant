@@ -53,7 +53,7 @@
 Designed for **SREs, DevOps engineers, and cloud developers**, IronShift helps you operate cloud infrastructure smarter, faster, and more securely. 🚀
 
 <p align="center">
-  <img src="assets/Video%20Project%20(1).gif" alt="IronShift Demo" width="800">
+  <img src="assets/Video%20Project%20(3).gif" alt="IronShift Demo" width="800">
 </p>
 
 ---
