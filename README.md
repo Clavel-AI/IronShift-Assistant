@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=IronShift.ironshift">
-    <img src="https://img.shields.io/badge/Version-0.6.5-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Version">
+    <img src="https://img.shields.io/badge/Version-0.6.6-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Version">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=IronShift.ironshift">
     <img src="https://img.shields.io/badge/Installs-25+-4CAF50?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Installs">
