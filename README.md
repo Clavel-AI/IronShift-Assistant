@@ -6,13 +6,13 @@
 
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=IronShift.ironshift">
-    <img src="https://img.shields.io/visual-studio-marketplace/v/IronShift.ironshift?style=for-the-badge&logo=visual-studio-code&logoColor=white&label=Version&color=007ACC&cacheSeconds=21600" alt="Version">
+    <img src="https://img.shields.io/badge/Version-0.6.5-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Version">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=IronShift.ironshift">
-    <img src="https://img.shields.io/visual-studio-marketplace/i/IronShift.ironshift?style=for-the-badge&logo=visual-studio-code&logoColor=white&label=Installs&color=4CAF50&cacheSeconds=21600" alt="Installs">
+    <img src="https://img.shields.io/badge/Installs-25+-4CAF50?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Installs">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=IronShift.ironshift">
-    <img src="https://img.shields.io/visual-studio-marketplace/r/IronShift.ironshift?style=for-the-badge&logo=visual-studio-code&logoColor=white&label=Rating&color=FFC107&cacheSeconds=21600" alt="Rating">
+    <img src="https://img.shields.io/badge/Rating-5%2F5-FFC107?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Rating">
   </a>
   <a href="https://twitter.com/IronShiftDev">
     <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
@@ -87,9 +87,37 @@ Seamlessly manage resources across multiple cloud providers from a single, unifi
   <img src="https://img.shields.io/badge/Amazon%20AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS">
 </p>
 
-✅ **Azure** — Resource Groups, VMs, AKS, Container Apps, Storage, App Services, Advisor, Monitor  
-✅ **AWS** — EC2, S3, Lambda, ECS/EKS, IAM, CloudWatch  
-✅ **Unified Experience** — Same interface for both clouds  
+✅ **Ask anything** — Query, manage, and automate any cloud resource  
+✅ **Natural language** — No need to memorize service names or CLI syntax  
+✅ **Unified experience** — Same interface for Azure, AWS, and more coming soon  
+
+---
+
+### **Cost Optimization on AWS**
+
+Analyze costs, identify savings opportunities, and optimize your AWS spending—all through natural conversation.
+
+<p align="center">
+  <img src="assets/Demo%203.gif" alt="AWS Cost Optimization Demo" width="800">
+</p>
+
+✅ **Query AWS costs** — Get instant insights on your cloud spending  
+✅ **Identify savings** — Find underutilized resources and optimization opportunities  
+✅ **Natural workflow** — Ask questions like "What are my top spending services?"  
+
+---
+
+### **Observability & Monitoring on Azure**
+
+Analyze logs, monitor application health, and get deep insights with Application Insights—right from your IDE.
+
+<p align="center">
+  <img src="assets/Demo%204.gif" alt="Azure Observability Demo" width="800">
+</p>
+
+✅ **Log analysis** — Query and analyze Azure Monitor logs effortlessly  
+✅ **Application Insights** — Dive deep into app performance and diagnostics  
+✅ **Observability made easy** — Understand your infrastructure health at a glance  
 
 ---
 
@@ -99,9 +127,9 @@ Choose the right mode for your task:
 
 | Mode | Description | Best For |
 |------|-------------|----------|
-| **💬 Chat** | Quick Q&A and information retrieval | Getting quick answers about your infrastructure |
-| **📋 Plan** | Generate step-by-step plans before execution | Complex operations requiring review |
-| **🤖 Agent** | Autonomous execution with approval checkpoints | Hands-free automation with safety controls |
+| **Chat** | Quick Q&A and information retrieval | Getting quick answers about your infrastructure |
+| **Plan** | Generate step-by-step plans before execution | Complex operations requiring review |
+| **Agent** | Autonomous execution with approval checkpoints | Hands-free automation with safety controls |
 
 ---
 
