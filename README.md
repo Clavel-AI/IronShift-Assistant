@@ -1,7 +1,7 @@
 <h1 align="center">IronShift — AI-Powered Cloud Infrastructure Copilot</h1>
 
 <p align="center">
-  <strong>Manage Azure & AWS through natural conversation—right inside VS Code</strong>
+  <strong>Manage any cloud or DevOps tool through natural conversation—right inside VS Code</strong>
 </p>
 
 <p align="center">
@@ -44,7 +44,7 @@
 ### **With IronShift, you get:**
 
 ✅ **Natural Language Interface** — Ask questions in plain English, no CLI memorization needed  
-✅ **Multi-Cloud Support** — Seamlessly manage Azure and AWS from a single interface  
+✅ **Universal Tool Support** — Azure, AWS, GCP, Docker, Terraform, Kubernetes, and more  
 ✅ **Human-in-the-Loop Safety** — Every action reviewed before execution, you stay in control  
 ✅ **Multiple AI Models** — Choose from GPT-4.1, Claude, Gemini, Grok, or let Auto mode decide  
 ✅ **Real-Time Streaming** — Watch as IronShift analyzes and executes step-by-step  
@@ -78,18 +78,22 @@ Ask questions in plain English and let IronShift handle the complex CLI commands
 
 ---
 
-### **Multi-Cloud Support — Azure & AWS**
+### **Universal Tool Support — Any CLI, One Interface**
 
-Seamlessly manage resources across multiple cloud providers from a single, unified interface.
+Seamlessly manage resources across cloud providers and DevOps tools from a single, unified interface.
 
 <p align="center">
   <img src="https://img.shields.io/badge/Microsoft%20Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Azure">
   <img src="https://img.shields.io/badge/Amazon%20AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS">
+  <img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" alt="GCP">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform">
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes">
 </p>
 
-✅ **Ask anything** — Query, manage, and automate any cloud resource  
-✅ **Natural language** — No need to memorize service names or CLI syntax  
-✅ **Unified experience** — Same interface for Azure, AWS, and more coming soon  
+✅ **Ask anything** — Query, manage, and automate any resource  
+✅ **Natural language** — No need to memorize service names or syntax  
+✅ **Works with any CLI** — If it runs in the terminal, IronShift can help  
 
 ---
 
@@ -229,12 +233,17 @@ ext install IronShift.ironshift
 ### **Prerequisites**
 
 | Requirement | Version | Purpose |
-|-------------|---------|---------|
+|-------------|---------|----------|
 | **VS Code** | v1.85.0+ | IDE |
-| **Azure CLI** | Latest | Azure operations |
-| **AWS CLI** | Latest | AWS operations |
+| **Any CLI** | Latest | Cloud/DevOps operations |
 
-📖 **[Azure CLI Install Guide](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)** | **[AWS CLI Install Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)**
+IronShift works with any CLI tool you have installed. Common examples:
+- **Azure CLI** (`az`) — Azure operations
+- **AWS CLI** (`aws`) — AWS operations  
+- **gcloud CLI** — GCP operations
+- **Docker** — Container management
+- **kubectl** — Kubernetes operations
+- **Terraform** — Infrastructure as Code
 
 ### **Getting Started**
 
@@ -255,31 +264,25 @@ ext install IronShift.ironshift
 
 ---
 
-## **Supported Clouds & Operations**
+## **Supported Tools & Operations**
 
-### **Microsoft Azure**
+IronShift works with any CLI tool. Here are some common examples:
 
-| Category | Operations |
-|----------|------------|
-| **Resource Groups** | List, Create, Delete |
-| **Virtual Machines** | List, Start, Stop, Restart, Get Status |
-| **Container Apps** | List, Manage, View Logs |
-| **Kubernetes (AKS)** | Cluster Management, Pod Status, Deployments |
-| **Storage Accounts** | List, Create, Manage Blobs |
-| **App Services** | Deploy, Configure, Monitor |
-| **Azure Advisor** | Get Recommendations, Cost Optimization |
-| **Monitor & Logs** | Query Metrics, Application Insights |
+### **Cloud Providers**
 
-### **Amazon AWS**
+| Provider | Example Operations |
+|----------|--------------------|
+| **Azure** | VMs, AKS, Storage, App Services, Monitor, Advisor |
+| **AWS** | EC2, S3, Lambda, ECS/EKS, IAM, CloudWatch |
+| **GCP** | Compute, GKE, Cloud Storage, Cloud Functions |
 
-| Category | Operations |
-|----------|------------|
-| **EC2 Instances** | List, Start, Stop, Terminate, Describe |
-| **S3 Buckets** | List, Create, Manage Objects, Permissions |
-| **Lambda Functions** | List, Invoke, View Logs, Update Config |
-| **ECS/EKS Clusters** | Cluster & Service Management, Task Definitions |
-| **IAM Resources** | Users, Roles, Policies, Access Keys |
-| **CloudWatch** | Logs, Metrics, Alarms |
+### **DevOps & Infrastructure Tools**
+
+| Tool | Example Operations |
+|------|--------------------|
+| **Docker** | Build, Run, Manage containers and images |
+| **Kubernetes** | Pods, Deployments, Services, Namespaces |
+| **Terraform** | Plan, Apply, State management |
 
 ---
 
@@ -310,9 +313,6 @@ IronShift is built with security and privacy as top priorities.
 
 We're constantly improving IronShift. Here's what's coming:
 
-- [ ] 🌐 **Google Cloud Platform (GCP)** support
-- [ ] 🏗️ **Terraform** integration for IaC management
-- [ ] 💰 **Cost analysis** and optimization suggestions
 - [ ] ⏰ **Scheduled operations** and automation workflows
 - [ ] 👥 **Team collaboration** features
 - [ ] 🔧 **Custom tool definitions** for enterprise needs
