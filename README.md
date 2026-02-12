@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=IronShift.ironshift">
-    <img src="https://img.shields.io/badge/Version-0.6.12-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Version">
+    <img src="https://img.shields.io/badge/Version-0.6.13-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Version">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=IronShift.ironshift">
     <img src="https://img.shields.io/badge/Installs-30+-4CAF50?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Installs">
@@ -14,14 +14,17 @@
   <a href="https://marketplace.visualstudio.com/items?itemName=IronShift.ironshift">
     <img src="https://img.shields.io/badge/Rating-5%2F5-FFC107?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Rating">
   </a>
-  <a href="https://twitter.com/IronShiftDev">
+  <a href="https://x.com/ironshift21128">
     <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
   </a>
-  <a href="https://discord.gg/ironshift">
+  <a href="https://discord.gg/avP6zsQt">
     <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
   </a>
-  <a href="https://linkedin.com/company/ironshift">
+  <a href="https://www.linkedin.com/company/clavelai/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="https://www.reddit.com/r/Ironshiftofficial/">
+    <img src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white" alt="Reddit">
   </a>
 </p>
 
@@ -391,7 +394,8 @@ We're constantly improving **IronShift** to make your cloud operations even bett
 🐞 **[Report Issues & Suggestions](https://github.com/Clavel-AI/IronShift-Assistant/issues)** — Found a bug or have a feature request? Let us know—we're always listening.  
 💡 **[Feature Requests](https://github.com/Clavel-AI/IronShift-Assistant/discussions)** — Share your ideas and vote on upcoming features.  
 📧 **Email:** support@ironshift.dev  
-🌐 **Website:** [https://ironshift.dev](https://ironshift.dev)
+🌐 **Website:** [https://ironshift.dev](https://ironshift.dev)  
+📢 **[Join our Reddit Community](https://www.reddit.com/r/Ironshiftofficial/)** — Discuss features, share ideas, and engage with the IronShift team.
 
 We're excited to have you on board—let **IronShift** supercharge your cloud workflow! 🚀
 
