@@ -1,15 +1,19 @@
 <h1 align="center">IronShift — AI-Powered Cloud Infrastructure Copilot</h1>
 
 <p align="center">
-  <strong>Manage any cloud or DevOps tool through natural conversation—right inside VS Code</strong>
+  <strong>Works in VS Code, Cursor, Windsurf, and any VS Code-compatible IDE</strong>
+</p>
+
+<p align="center">
+  <strong>Manage any cloud or DevOps tool through natural conversation—right inside your IDE</strong>
 </p>
 
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=IronShift.ironshift">
-    <img src="https://img.shields.io/badge/Version-0.6.13-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Version">
+    <img src="https://img.shields.io/badge/Version-0.6.22-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Version">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=IronShift.ironshift">
-    <img src="https://img.shields.io/badge/Installs-30+-4CAF50?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Installs">
+    <img src="https://img.shields.io/badge/Installs-50+-4CAF50?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Installs">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=IronShift.ironshift">
     <img src="https://img.shields.io/badge/Rating-5%2F5-FFC107?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Rating">
@@ -17,7 +21,7 @@
   <a href="https://x.com/ironshift21128">
     <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
   </a>
-  <a href="https://discord.gg/avP6zsQt">
+  <a href="https://discord.com/invite/ZvYYKcJYE9">
     <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
   </a>
   <a href="https://www.linkedin.com/company/clavelai/">
@@ -30,6 +34,7 @@
 
 <p align="center">
   <a href="#what-is-ironshift">What is IronShift</a> •
+  <a href="#supported-ides">Supported IDEs</a> •
   <a href="#key-features">Features</a> •
   <a href="#quick-start">Quick Start</a> •
   <a href="#supported-tools--operations">Tools</a> •
@@ -41,25 +46,45 @@
 
 ## **What is IronShift?**
 
-**IronShift** is the AI-powered cloud infrastructure copilot that helps SREs and cloud developers manage, troubleshoot, and automate cloud resources—all within **Visual Studio Code**. Stop context-switching between your IDE, cloud consoles, and documentation.
+**IronShift** is the AI-powered cloud infrastructure copilot that helps SREs and cloud developers manage, troubleshoot, and automate cloud resources—all within your favourite IDE. Whether you use **VS Code**, **Cursor**, **Windsurf**, or any other VS Code-compatible editor, IronShift works seamlessly across all of them. Stop context-switching between your IDE, cloud consoles, and documentation.
 
-> Just ask IronShift what you need, and it will execute cloud operations, analyze infrastructure, and provide intelligent recommendations—with your approval.
+> Just ask IronShift what you need, and it will execute cloud operations, analyze infrastructure, and provide intelligent recommendations—with your approval. Works natively in VS Code, Cursor, Windsurf, and more.
 
 ### **With IronShift, you get:**
 
 ✅ **Natural Language Interface** — Ask questions in plain English, no CLI memorization needed  
-✅ **Universal Tool Support** — Azure, AWS, GCP, Docker, Terraform, Kubernetes, and more  
+✅ **Universal Tool Support** — Azure, AWS, GCP, Docker, Terraform, Kubernetes, Ansible, and more  
 ✅ **Human-in-the-Loop Safety** — Every action reviewed before execution, you stay in control  
-✅ **12 AI Models** — Choose from GPT-5.2 Pro, Claude Opus 4.5, Gemini 3, Grok 4, and more  
+✅ **11 AI Models** — Choose from GPT-5.2, Claude Sonnet 4.6, Gemini 3, Grok 4, and more  
+✅ **Auto Mode** — Intelligent multi-model orchestration that picks the best model per task  
 ✅ **Real-Time Streaming** — Watch as IronShift analyzes and executes step-by-step  
 ✅ **Vision Support** — Attach screenshots for context-aware troubleshooting  
 ✅ **OS-Aware Commands** — Automatically detects your OS and generates the right CLI syntax  
+✅ **Terminal Error Auto-Fix** — "Fix with IronShift ⚡" appears instantly when a terminal command fails  
+✅ **IaC File Generator** — Guided wizard to generate Terraform, Ansible, and Kubernetes files  
 
-Designed for **SREs, DevOps engineers, and cloud developers**, IronShift helps you operate cloud infrastructure smarter, faster, and more securely. 🚀
+Designed for **SREs, DevOps engineers, and cloud developers**, IronShift helps you operate cloud infrastructure smarter, faster, and more securely—no matter which IDE you use. 🚀
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Clavel-AI/IronShift-Assistant/main/assets/Video%20Project%20(1).gif" alt="IronShift Demo" width="800">
 </p>
+
+---
+
+## **Supported IDEs**
+
+IronShift is built on the VS Code Extension API and works natively across all VS Code-compatible editors:
+
+| IDE | URI Scheme | Status |
+|-----|------------|--------|
+| **Visual Studio Code** | `vscode://` | ✅ Fully Supported |
+| **Cursor** | `cursor://` | ✅ Fully Supported |
+| **Windsurf** | `windsurf://` | ✅ Fully Supported |
+| **Any VS Code-compatible IDE** | Auto-detected | ✅ Supported |
+
+The extension automatically detects which IDE you're running in using `vscode.env.uriScheme` and `vscode.env.appName`. The OAuth login flow passes your IDE identity to the dashboard so the auth callback is redirected back to the **correct IDE** — no manual configuration needed.
+
+> **How it works:** When you log in, IronShift sends your IDE's URI scheme (e.g. `cursor`) to the dashboard. After authentication via Google or GitHub, the dashboard redirects to `cursor://ironshift/auth-callback?token=...` — ensuring the token lands in the right application automatically.
 
 ---
 
@@ -99,6 +124,32 @@ Seamlessly manage resources across cloud providers and DevOps tools from a singl
 ✅ **Ask anything** — Query, manage, and automate any resource  
 ✅ **Natural language** — No need to memorize service names or syntax  
 ✅ **Works with any CLI** — If it runs in the terminal, IronShift can help  
+
+---
+
+### **Terminal Error Auto-Fix ⚡**
+
+When a terminal command fails, IronShift instantly detects it and offers a one-click fix—no copy-pasting errors needed.
+
+✅ **Automatic detection** — Monitors all your terminal sessions for failed commands  
+✅ **Instant offer** — "Fix with IronShift ⚡" notification appears the moment a command fails  
+✅ **AI-powered fix** — Analyzes the failed command and its error output to produce the corrected command  
+✅ **Run or Copy** — Execute the fix directly in the same terminal, or copy it to clipboard  
+✅ **Safe** — You always review the suggested fix before it runs  
+
+> Requires VS Code `v1.93.0+` for shell integration support.
+
+---
+
+### **IaC File Generator — Infrastructure Wizard**
+
+Generate production-ready infrastructure files in seconds through a guided multi-step wizard.
+
+✅ **Terraform** — Generate `.tf` files for AWS, Azure, or GCP resources  
+✅ **Ansible** — Generate playbooks for server configuration and deployment  
+✅ **Kubernetes** — Generate Deployment, Service, and HPA manifests  
+✅ **Saved to workspace** — Files are placed in `.ironshift/infra/<timestamp>/` for easy access  
+✅ **One-click execution** — Suggested CLI commands to apply the generated files immediately  
 
 ---
 
@@ -157,36 +208,39 @@ Every action is reviewed before execution. IronShift never runs a command withou
 
 ---
 
-### **12 Industry-Leading AI Models**
+### **11 Industry-Leading AI Models + Auto Mode**
 
-Choose from 12 AI models across 4 providers, or let Auto Mode pick the best one for each task.
+Choose from 11 AI models across 4 providers, or use **Auto Mode** to let IronShift pick the best model automatically for each task.
 
 #### Standard Models (Starter — Free)
 
 | Model | Provider | Best For |
 |-------|----------|----------|
-| **GPT-5.1** | OpenAI | Complex reasoning & troubleshooting |
-| **GPT-5 Nano** | OpenAI | Fast, lightweight responses |
+| **GPT-5.2** | OpenAI | Complex reasoning & troubleshooting |
+| **GPT-5.2 Pro** | OpenAI | Fast, efficient responses |
 | **Gemini 2.5 Pro** | Google | Advanced reasoning & multimodal tasks |
 | **Gemini 2.5 Flash** | Google | Speed-optimized responses |
 | **Grok 4** | xAI | Real-time knowledge & creative solutions |
+| **Auto Mode (Free)** | Multi-Model | Automatic model selection for standard tasks |
 
 #### Premium Models (Pro — $10/mo)
 
 | Model | Provider | Best For |
 |-------|----------|----------|
-| **GPT-5.2** | OpenAI | Next-gen advanced reasoning |
-| **Claude Sonnet 4.5** | Anthropic | Detailed analysis & explanations |
-| **Claude Sonnet 4** | Anthropic | Balanced performance |
-| **Gemini 3 Pro** | Google | Google's most capable model |
-| **Gemini 3 Flash** | Google | Google's fastest next-gen model |
+| **GPT-5.4** | OpenAI | Advanced next-gen reasoning |
+| **Claude Sonnet 4.6** | Anthropic | Detailed analysis & explanations |
+| **Claude Sonnet 4.5** | Anthropic | Balanced performance |
+| **Gemini 3 Pro Preview** | Google | Google's most capable model |
+| **Gemini 3 Flash Preview** | Google | Google's fastest next-gen model |
+| **Auto Mode (Pro)** | Multi-Model | Automatic model selection using premium models |
 
 #### Top-Tier Models (Pro Plus — $20/mo)
 
 | Model | Provider | Best For |
 |-------|----------|----------|
-| **GPT-5.2 Pro** | OpenAI | Most capable OpenAI model |
-| **Claude Opus 4.5** | Anthropic | Deepest analysis & problem-solving |
+| **GPT-5.4 Pro** | OpenAI | Most capable OpenAI model |
+| **Claude Opus 4.6** | Anthropic | Deepest analysis & problem-solving |
+| **Claude Opus 4.5** | Anthropic | Exceptional long-form reasoning |
 
 *No API key management needed—IronShift handles model access based on your plan.*
 
@@ -213,6 +267,7 @@ Keep your conversations organized and pick up right where you left off.
 ✅ **Multiple Sessions** — Switch between different conversations  
 ✅ **Edit & Retry** — Modify previous messages and regenerate responses  
 ✅ **Auto-cleanup** — Empty chats are automatically removed  
+✅ **New Chat** — Start a fresh session instantly from the Command Palette  
 
 ---
 
@@ -231,12 +286,13 @@ Get instant feedback with real-time streaming responses. Execute multiple comman
 
 ### **Installation**
 
-1. Open **Visual Studio Code**
+**In VS Code, Cursor, or Windsurf:**
+1. Open your IDE
 2. Go to **Extensions** (`Ctrl+Shift+X` / `Cmd+Shift+X`)
 3. Search for **"IronShift"**
 4. Click **Install**
 
-Or install directly:
+Or install directly from any compatible IDE's terminal:
 ```
 ext install IronShift.ironshift
 ```
@@ -245,7 +301,7 @@ ext install IronShift.ironshift
 
 | Requirement | Version | Purpose |
 |-------------|---------|----------|
-| **VS Code** | v1.85.0+ | IDE |
+| **VS Code / Cursor / Windsurf** | v1.93.0+ equivalent | IDE (shell integration for Terminal Auto-Fix) |
 | **Any CLI** | Latest | Cloud/DevOps operations |
 
 IronShift works with any CLI tool you have installed. Common examples:
@@ -255,12 +311,14 @@ IronShift works with any CLI tool you have installed. Common examples:
 - **Docker** — Container management
 - **kubectl** — Kubernetes operations
 - **Terraform** — Infrastructure as Code
+- **Ansible** — Configuration management
 
 ### **Getting Started**
 
-1. Click the **IronShift** icon in the Activity Bar (sidebar)
+1. Click the **IronShift** icon in the Activity Bar (sidebar) — visible in VS Code, Cursor, Windsurf, and compatible IDEs
 2. **Sign up or log in** via the IronShift dashboard (opens in your browser)
-3. Start asking questions in natural language!
+3. The OAuth callback is automatically routed back to your IDE — no manual token copying needed
+4. Start asking questions in natural language!
 
 > **Tip:** You can also log in by running the command **"IronShift: Login to IronShift"** from the Command Palette, or paste a token manually with **"IronShift: Login with Token"**.
 
@@ -268,17 +326,20 @@ IronShift works with any CLI tool you have installed. Common examples:
 
 ## **Authentication**
 
-IronShift uses a secure OAuth-based login flow:
+IronShift uses a secure OAuth-based login flow that works across all supported IDEs:
 
 1. Click **Login** in the chat panel or run **"IronShift: Login to IronShift"** from the Command Palette
 2. You'll be redirected to the **[IronShift Dashboard](https://app.ironshift.dev)** in your browser
-3. Sign up or sign in — your session token is securely passed back to VS Code
-4. Your plan, usage limits, and available models are automatically synced
+3. Sign up or sign in (via email, Google, or GitHub)
+4. The token is automatically sent back to **your IDE** via the correct URI scheme (`vscode://`, `cursor://`, `windsurf://`, etc.)
+5. Your plan, usage limits, and available models are automatically synced
 
-✅ **Seamless OAuth** — One-click login via the dashboard  
-✅ **Token-based auth** — Securely stored in VS Code's global state  
+✅ **IDE-aware OAuth** — Detects your IDE automatically, redirects the token to the right place  
+✅ **Multi-IDE support** — Same account, same plan, works in VS Code, Cursor, Windsurf  
+✅ **Seamless login** — Google & GitHub OAuth, no manual token copying needed  
+✅ **Token-based auth** — Securely stored in the IDE's global state  
 ✅ **Auto-refresh** — User data syncs periodically to reflect plan changes  
-✅ **Logout anytime** — Run **"IronShift: Logout from IronShift"**
+✅ **Logout anytime** — Run **"IronShift: Logout from IronShift"**  
 
 ---
 
@@ -289,10 +350,13 @@ All commands are available via the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+
 | Command | Description |
 |---------|-------------|
 | **IronShift: Open IronShift** | Open and focus the IronShift chat panel |
+| **IronShift: New Chat** | Start a fresh chat session |
 | **IronShift: Clear Chat Session** | Clear the current chat session |
+| **IronShift: Manage Workspace Context** | Edit the persistent workspace context file |
 | **IronShift: Login to IronShift** | Open the IronShift dashboard to sign in |
 | **IronShift: Login with Token** | Paste an authentication token manually |
 | **IronShift: Logout from IronShift** | Log out and clear stored credentials |
+| **IronShift: Deploy Project** | Trigger a cloud deployment for the current project |
 
 ---
 
@@ -315,8 +379,8 @@ IronShift works with any CLI tool. Here are some common examples:
 
 | Provider | Example Operations |
 |----------|--------------------|
-| **Azure** | VMs, AKS, Storage, App Services, Monitor, Advisor |
-| **AWS** | EC2, S3, Lambda, ECS/EKS, IAM, CloudWatch |
+| **Azure** | VMs, AKS, Storage, App Services, Monitor, Advisor, Application Insights |
+| **AWS** | EC2, S3, Lambda, ECS/EKS, IAM, CloudWatch, Cost Explorer |
 | **GCP** | Compute, GKE, Cloud Storage, Cloud Functions |
 
 ### **DevOps & Infrastructure Tools**
@@ -324,8 +388,9 @@ IronShift works with any CLI tool. Here are some common examples:
 | Tool | Example Operations |
 |------|--------------------|
 | **Docker** | Build, Run, Manage containers and images |
-| **Kubernetes** | Pods, Deployments, Services, Namespaces |
-| **Terraform** | Plan, Apply, State management |
+| **Kubernetes** | Pods, Deployments, Services, Namespaces, HPA |
+| **Terraform** | Plan, Apply, State management, IaC generation |
+| **Ansible** | Playbook generation, Server configuration |
 
 ---
 
@@ -336,27 +401,32 @@ IronShift works with any CLI tool. Here are some common examples:
 | `ironshift.backendUrl` | IronShift Cloud | Backend API URL (for enterprise/self-hosted deployments) |
 | `ironshift.dashboardUrl` | `https://app.ironshift.dev` | URL of the IronShift web dashboard for authentication |
 | `ironshift.autoApprove` | `false` | Auto-approve low-risk read operations without confirmation |
-| `ironshift.defaultModel` | `gpt-5.1` | Default AI model for chat responses (see available models above) |
+| `ironshift.defaultModel` | `gpt-5.2` | Default AI model for chat responses (see available models above) |
 
 ---
 
 ## **Plans & Pricing**
 
-IronShift offers three plans so you can choose the right level for your needs.
+IronShift uses a **credit-based system** — credits represent your actual AI API budget, giving you full transparency and flexibility.
+
+> 💡 **1 credit = $0.01** — Credits are consumed based on the tokens used by each AI model call.
 
 | | **Starter** | **Pro** *(Most Popular)* | **Pro Plus** |
 |---|---|---|---|
 | **Price** | Free | $10/mo | $20/mo |
 | **Credits/Month** | 30 | 600 | 1,200 |
-| **Standard models** (GPT-5.1, GPT-5 Nano, Gemini 2.5, Grok 4) | ✅ | ✅ | ✅ |
-| **Premium models** (GPT-5.2, Claude Sonnet 4.5, Gemini 3, etc.) | 🔒 | ✅ | ✅ |
-| **Top-tier models** (GPT-5.2 Pro, Claude Opus 4.5) | 🔒 | 🔒 | ✅ |
+| **Standard models** (GPT-5.2, Gemini 2.5, Grok 4, Auto Free) | ✅ | ✅ | ✅ |
+| **Premium models** (GPT-5.4, Claude Sonnet 4.6/4.5, Gemini 3, Auto Pro) | 🔒 | ✅ | ✅ |
+| **Top-tier models** (GPT-5.4 Pro, Claude Opus 4.6/4.5) | 🔒 | 🔒 | ✅ |
 | **All operation modes** (Chat, Plan, Agent) | ✅ | ✅ | ✅ |
 | **Image attachments & vision** | ✅ | ✅ | ✅ |
 | **Local chat history** | ✅ | ✅ | ✅ |
+| **Terminal Auto-Fix** | ✅ | ✅ | ✅ |
+| **IaC File Generator** | ✅ | ✅ | ✅ |
 
 - No credit card required for the free plan
 - Cancel anytime
+- Monthly & yearly billing available
 
 Upgrade anytime from the **[IronShift Dashboard](https://app.ironshift.dev)**. Plan changes sync automatically to your extension.
 
@@ -372,6 +442,7 @@ IronShift is built with security and privacy as top priorities.
 ✅ **Audit Trail** — Every action logged in conversation history  
 ✅ **Enterprise Ready** — Self-host your own backend for complete control  
 ✅ **No Data Collection** — Your queries and results stay on your machine  
+✅ **Secure Auth** — OAuth via Google & GitHub, JWT-based token storage  
 
 ---
 
@@ -379,10 +450,13 @@ IronShift is built with security and privacy as top priorities.
 
 We're constantly improving IronShift. Here's what's coming:
 
+- [x] ✅ **Auto Mode** — Intelligent multi-model selection per task
+- [x] ✅ **Terminal Auto-Fix** — AI fixes failed commands instantly
+- [x] ✅ **IaC File Generator** — Terraform, Ansible, Kubernetes wizard
+- [x] ✅ **Credit-based usage** — Transparent, token-based billing
 - [ ] ⏰ **Scheduled operations** and automation workflows
 - [ ] 👥 **Team collaboration** features
 - [ ] 🔧 **Custom tool definitions** for enterprise needs
-- [ ] 🤖 **Auto mode** — Intelligent model selection per task
 
 ---
 
@@ -390,7 +464,7 @@ We're constantly improving IronShift. Here's what's coming:
 
 We're constantly improving **IronShift** to make your cloud operations even better. Your feedback helps shape the future of the extension!
 
-💬 **[Join the Conversation](https://discord.gg/ironshift)** — Connect with fellow developers, share feedback, and get real-time support in our active **Discord Community**.  
+💬 **[Join the Conversation](https://discord.com/invite/ZvYYKcJYE9)** — Connect with fellow developers, share feedback, and get real-time support in our active **Discord Community**.  
 🐞 **[Report Issues & Suggestions](https://github.com/Clavel-AI/IronShift-Assistant/issues)** — Found a bug or have a feature request? Let us know—we're always listening.  
 💡 **[Feature Requests](https://github.com/Clavel-AI/IronShift-Assistant/discussions)** — Share your ideas and vote on upcoming features.  
 📧 **Email:** support@ironshift.dev  
